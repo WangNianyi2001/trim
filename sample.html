@@ -1,0 +1,21 @@
+<script src="trim.js"></script>
+<pre>
+
+	Whatever the fuck is written here,
+	nobody's gonna give a damn anyways.
+
+	No matter whether it is...
+      indented,
+	or with trailing spaces.    
+
+</pre>
+<script>
+	const $pre = document.getElementsByTagName('pre')[0];
+	$pre.innerHTML = $pre.innerHTML.trim({
+		trimWhiteLines: false,
+		tabWidth: 4,
+		forceConvert: ' ',
+		strict: true,
+		trimTrailing: false,
+	});
+</script>
