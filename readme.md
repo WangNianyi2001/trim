@@ -21,7 +21,7 @@ If there are any preceding or trailing lines full of whitespace characters, they
 `.trim()
 => `hello, world
   What is this weird indent?
-  (empty line below)`
+(empty line below)`
 ```
 
 This is super handy when dealing with blog/code formatting in an HTML page.
@@ -36,9 +36,9 @@ This is super handy when dealing with blog/code formatting in an HTML page.
 </pre>
 <script>
     // Automatically trim redundant code indents in <pre>
-    Array.from(document.getElementsByTagName('pre')).forEach(
-        $pre => $pre.innerHTML = $pre.innerHTML.trim()
-    );
+    for($pre of document.getElementsByTagName('pre')) {
+        $pre => $pre.innerHTML = $pre.innerHTML.trim();
+    }
 </script>
 ```
 
