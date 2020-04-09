@@ -1,6 +1,6 @@
 # trim
 
-This JavaScript package provides an enhanced substitude for `String.prototype.trim()`, which functions well in cases with multiple lines.
+This JavaScript package provides an enhanced substitution for `String.prototype.trim()`, which functions well in cases with multiple lines.
 
 # How to use it?
 
