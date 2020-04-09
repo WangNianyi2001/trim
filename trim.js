@@ -10,8 +10,8 @@
 		return i;
 	};
 
-	const whiteSpaces = ' \t';
-	const isWhiteLine = line => Array.prototype.every.call(line, ch => whiteSpaces.includes(ch));
+	const whitespaces = ' \t';
+	const isWhiteLine = line => Array.prototype.every.call(line, ch => whitespaces.includes(ch));
 	const isNotWhiteLine = not(isWhiteLine);
 	const calculatePrefixActualLength = (prefix, tabWidth) => Array.prototype.reduce.call(
 		prefix, (sum, ch) => sum + (ch === '\t' ? tabWidth : 1), 0
